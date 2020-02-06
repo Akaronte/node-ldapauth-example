@@ -8,11 +8,14 @@ npm install
 Set enviroment variables for config node.
 
 URL=ldap://localhost:389
-BINDDN=cn=admin,dc=domain
-BINDCREDENTIALS=password
-SEARCHBASE=ou=Users,dc=domain
-SEARCHFILTER=(uid={{username}})
 
+BINDDN=cn=admin,dc=domain
+
+BINDCREDENTIALS=password
+
+SEARCHBASE=ou=Users,dc=domain
+
+SEARCHFILTER=(uid={{username}})
 
 ```
 node server.js
