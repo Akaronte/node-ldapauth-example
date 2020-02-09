@@ -3,6 +3,8 @@ var express      = require('express'),
     bodyParser   = require('body-parser'),
     LdapStrategy = require('passport-ldapauth');
 
+require('dotenv').config()
+
 url = process.env.URL || 'ldap://localhost:389';
 bindDN = process.env.BINDDN || 'cn=admin,dc=domain';
 bindCredentials = process.env.BINDCREDENTIALS || 'password';
